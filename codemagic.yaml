@@ -4,6 +4,6 @@ workflows:
     android-app:
         name: Android App
         scripts:
-            - ./gradlew assembleDebug
+            - cd Covid19-Java && ./gradlew assembleDebug
         artifacts:
             - app/build/outputs/**/*.apk
